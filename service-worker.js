@@ -25,6 +25,8 @@
         'js/main.js',
         'js/dbhelper.js',
         'data/restaurants.json',
+        'restaurant.html',
+        'js/restaurant_info.js',
     ];
 
     let staticCacheName = 'resto-cache-v1';
