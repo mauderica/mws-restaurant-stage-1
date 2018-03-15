@@ -72,6 +72,27 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   /* object-position: 10% 10%; */
 }
 
+/* The below 3 styles are based off of the Udacity lesson on Skip Links */
+.skip-link, .skip-link2 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: yellow;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 90px;
+  left: 20px;
+}
+
+.skip-link2:focus {
+  top: 145px;
+  left: 20px;
+}
+
 
 /* ====================== Navigation ====================== */
 nav {
