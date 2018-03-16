@@ -14,7 +14,7 @@ body,td,th,p{
 }
 
 body {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   padding: 10px 20px;
   margin: auto;
   align-content: center;
@@ -191,7 +191,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 15px 70px;
+  padding: 15px;
   width: 100%;
 }
 
@@ -204,7 +204,7 @@ nav h1 a {
   /* min-height: 380px; */
   padding: 0 30px 25px;
   text-align: center;
-  width: 100%;
+  width: calc((100% - 312px)/3);
 }
 
 #restaurants-list .restaurant-img {
@@ -397,6 +397,24 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
   vertical-align: top;
+}
+
+
+/* ====================== BREAKPOINT 1200px ====================== */
+@media screen and (max-width: 1200px) {
+  #restaurants-list li {
+    transition: width 0.5s;
+    width: calc((100% - 210px)/2);
+  }
+}
+
+
+/* ====================== BREAKPOINT 815px ====================== */
+@media screen and (max-width: 815px) {
+  #restaurants-list li {
+    transition: width 0.5s;
+    width: 100%;
+  }
 }
 
 
