@@ -22,17 +22,17 @@
   <a href="#filter-options" class="skip-link">Press ENTER for Filter Options, TAB to Enter Map</a>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section role="application" aria-roledescription="Google Maps" id="map-container">
       <div id="map"></div>
     </section>
     <a href="#nav-top" class="skip-link">Press ENTER for Navigation, SHIFT-TAB to Enter Map</a>
     <section class="container">
       <div id="filter-options" tabindex="-1" class="filter-options container">
         <h2>Filter Results:</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label="neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
